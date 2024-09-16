@@ -70,5 +70,7 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
+*.swift
+
 # Ignore unnecessary files and directories globally, but keep .playground files
 !*.playground  # Keep .playground files and include them in version control
