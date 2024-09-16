@@ -2,20 +2,29 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-## User settings
+## User settings - Ignore user-specific data and workspace
 xcuserdata/
 
-## Obj-C/Swift specific
+## Obj-C/Swift specific - Ignore header maps and app packaging files
 *.hmap
 
-## App packaging
+## App packaging - Ignore app build files and debug symbols
 *.ipa
 *.dSYM.zip
 *.dSYM
 
-## Playgrounds
+## Playgrounds - Ignore unnecessary files within Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+
+# Ignore all unnecessary playground-related files
+*.playground/*.xcworkspace/
+*.playground/xcuserdata/
+*.playground/*.xcodeproj/
+*.playground/*.xctemplate
+*.playground/*.xcuserstate
+*.playground/Timeline.xctimeline
+*.playground/playground.xcworkspace/
 
 # Swift Package Manager
 #
@@ -60,3 +69,6 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# Ignore unnecessary files and directories globally, but keep .playground files
+!*.playground  # Keep .playground files and include them in version control
